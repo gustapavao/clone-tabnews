@@ -1,10 +1,10 @@
-import database from '../../../../infra/database'
+import database from "../../../../infra/database";
 
 async function status(req, res) {
-  const result = await database.query('SELECT 1 + 1;')
-  console.log(result)
-  console.log("*******************")
-  res.status(200).send({ message: "eu te amo" });
+  const updadetAt = new Date().toISOString();
+  res.status(200).send({
+    updadet_at: updadetAt,
+  });
 }
 
 export default status;
