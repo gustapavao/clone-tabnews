@@ -1,4 +1,7 @@
 /.next
 /node_modules
 /.idea
+production.env
 .env
+.env.development
+infra/migrations
